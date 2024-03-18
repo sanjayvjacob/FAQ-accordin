@@ -1,0 +1,25 @@
+@media screen and (max-width: 375px) {
+  body {
+    background-image: none; /* Remove background image on smaller screens */
+  }
+
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .faq-heading {
+    font-size: 22px; /* Adjust font size for FAQ heading */
+  }
+
+  .accordion-heading {
+    padding: 10px; /* Adjust padding for accordion headings */
+  }
+
+  .accordion-title {
+    font-size: 14px; /* Reduce font size for accordion titles */
+  }
+
+  .accordion-content {
+    padding: 10px; /* Adjust padding for accordion content */
+  }
+}

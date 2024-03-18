@@ -1,0 +1,122 @@
+body {
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.faq-heading{
+  text-align: left !important;
+}
+
+p {
+  font-size: 16px;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-heading:focus {
+  outline: none; /* Remove outline on focus for better accessibility */
+}
+
+/* Change color of heading when hovering */
+.accordion-heading:hover,
+.accordion-heading:hover .accordion-title {
+  color: red;
+}
+
+.accordion-title {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+}
+
+.accordion-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.accordion-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Plus icon */
+.accordion-btn.icon-plus::after {
+  content: "\002B"; /* Plus sign */
+  font-size: 20px;
+  color: #666;
+}
+
+/* Minus icon */
+.accordion-btn.icon-minus::after {
+  content: "\2212"; /* Minus sign */
+  font-size: 20px;
+  color: #666;
+  display: none; /* Initially hide */
+}
+
+.active .accordion-btn.icon-plus {
+  display: none;
+}
+
+.active .accordion-btn.icon-minus {
+  display: inline-block;
+}
+
+.active .accordion-content {
+  display: block;
+}
+
+
+
+
+
+
